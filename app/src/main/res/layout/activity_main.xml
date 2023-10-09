@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+
+    <TextView
+        android:id="@+id/Head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:text="@string/app_name"
+        android:layout_marginLeft="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/number1EditText"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:textColorHint="@color/green"
+        android:hint="Enter your hourly rate ($)"
+        android:textColor="@color/white"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/Head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+
+    <EditText
+        android:id="@+id/number2EditText"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Tax rate %"
+        android:textColorHint="@color/green"
+        android:textColor="@color/white"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/number1EditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/number3EditText"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Number of hours worked"
+        android:textColorHint="@color/green"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:layout_below="@+id/number2EditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Get your net income "
+        android:layout_below="@+id/number3EditText"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:text="$"
+        android:textSize="24sp"
+        android:layout_below="@+id/addButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:background="@color/white"
+        android:text="Clear"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
